@@ -1,7 +1,3 @@
-Certainly! Below is a detailed README.md tailored for the `Find-CopilotInteractions-Graph.ps1` script in your Copilot repository. This README provides clear setup, usage, parameter, requirements, and troubleshooting instructions, designed for IT admins and advanced users.
-
----
-
 # Find-CopilotInteractions-Graph.ps1
 
 ## Overview
@@ -208,9 +204,5 @@ MIT License (see repository for details).
 ## Support
 
 For issues, open a [GitHub issue](https://github.com/mikelee1313/Copilot/issues) or contact the script authors.
-
----
-
-**Happy reporting!**
 
 ---
