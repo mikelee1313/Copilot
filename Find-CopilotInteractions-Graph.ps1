@@ -89,7 +89,7 @@ $Thumbprint = "B696FDCFE1453F3FBC6031F54DE988DA0ED905A9"
 $UserListPath = "C:\temp\simpleuserlist.txt"  # File should contain one UPN per line, no headers
 
 # Report filtering options
-$IncludeAIResponses = $false  # Set to $false to exclude AI responses and only show user prompts
+$IncludeAIResponses = $true  # Set to $false to exclude AI responses and only show user prompts
 $ShowGridView = $false  # Set to $false to disable the interactive GridView popup at the end
 
 # Export options
