@@ -50,7 +50,7 @@
     PS> .\Find-CopilotInteractions-Graph.ps1
 
 .NOTES
-Author: Mike Lee| Jay Thakker | (Tony Redmond) Office 365 for IT Pros
+Author: Mike Lee | Jay Thakker | (Tony Redmond) Office 365 for IT Pros
 Date: 08-Jul-2025
 Version: 1.7
 
