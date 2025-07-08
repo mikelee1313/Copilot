@@ -77,7 +77,7 @@ $appID = 'abc64618-283f-47ba-a185-50d935d51d57'
 $TenantId = '9cfc42cb-51da-4055-87e9-b20a170b6ba3'
 
 # Authentication type: Choose 'ClientSecret' or 'Certificate'
-$AuthType = 'ClientSecret'  # Valid values: 'ClientSecret' or 'Certificate'
+$AuthType = 'Certificate'  # Valid values: 'ClientSecret' or 'Certificate'
 
 # Client Secret authentication (used when $AuthType = 'ClientSecret')
 $ClientSecret = ''
