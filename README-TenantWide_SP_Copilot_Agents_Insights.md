@@ -73,6 +73,7 @@ No arguments are required if you’ve set your variables at the top of the scrip
 
 - [Microsoft Graph API Search Documentation](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0&tabs=http)
 - [Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365-copilot/)
+- [Insights report on SharePoint agents](https://learn.microsoft.com/en-us/sharepoint/insights-on-sharepoint-agents)
 
 ---
 
