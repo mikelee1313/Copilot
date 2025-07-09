@@ -144,6 +144,17 @@ $MaxResultsPerRequest = 100
 - **Console Summary:** Per-user and global statistics, including automatic vs. user-initiated interactions.
 - **Optional Interactive View:** Use `$ShowGridView = $true` to open results in a GUI table.
 
+Sample Output:
+
+With CSV Output:
+
+![image](https://github.com/user-attachments/assets/76b949c0-67b7-4bcb-97a6-c5e41a23279b)
+
+With XLSX Outout:
+
+![image](https://github.com/user-attachments/assets/f0646d6b-22f9-44c7-958c-9bb58a42f37e)
+
+
 ---
 
 ## How It Works
