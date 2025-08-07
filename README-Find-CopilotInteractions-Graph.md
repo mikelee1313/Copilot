@@ -10,14 +10,56 @@ It supports both Client Secret and Certificate-based authentication, robust erro
 
 ## Features
 
-- **Bulk Copilot Interactions Fetching**: Collects prompt/response history for all users listed in a simple text file.
-- **Advanced Filtering**: Optionally include/exclude AI responses for focused user activity reporting.
-- **Automatic vs. User-Initiated Detection**: Flags system-generated (automatic) vs. human-initiated prompts.
-- **Throttling Protection**: Implements exponential backoff and delay between requests to respect Graph API rate limits.
-- **Flexible Export**: Outputs results as CSV (default) or Excel (if ImportExcel module is installed).
-- **Interactive Analysis**: Optionally view results in PowerShell’s Out-GridView.
-- **Aggregated Statistics**: Provides per-user and global Copilot activity breakdowns.
-- **Date Range Controls**: Analyze any time window with customizable look-back/forward days.
+**Core Features**
+- Microsoft Copilot interaction analysis - Retrieves and analyzes Microsoft Copilot interactions for specified users using Microsoft Graph API 
+- Multi-user processing - Processes multiple users from a text file containing user principal names 
+- Date range filtering - Configurable lookback and lookahead periods for interaction analysis 
+- License validation - Checks if users have Copilot licenses before processing
+
+**Authentication Features**
+- Dual authentication methods - Supports both Client Secret and Certificate authentication
+- Azure AD app registration integration - Requires User.Read.All and AiEnterpriseInteraction.Read.All permissions
+- Secure credential handling - Properly handles sensitive authentication data
+
+**Data Processing Features**
+- AI response filtering - Optional inclusion/exclusion of AI responses (shows only user prompts if desired)
+- Automatic interaction detection - Identifies and flags automatically generated interactions vs user-initiated ones
+- Full content capture - Captures complete interaction body content without truncation
+- Rich metadata collection - Captures timestamps, app names, contexts, attachments, mentions, and links
+
+**Performance & Reliability Features**
+- Throttling protection - Advanced throttling handling with exponential backoff for Microsoft Graph API
+- Rate limiting compliance - Respects the 30 RPS limit for Copilot API with configurable delays
+- RPS monitoring - Real-time request-per-second tracking and performance analytics
+- Pagination support - Handles large datasets with automatic pagination through @odata.nextLink
+- Error handling - Comprehensive error handling with retry mechanisms
+
+**Logging & Debugging Features**
+- Comprehensive logging - Logs all requests and responses to CSV files with timestamps
+- Debug mode - Optional detailed logging of all API interactions
+- Error tracking - Specialized logging for non-200 HTTP responses
+- Performance metrics - Tracks total requests, elapsed time, and average RPS
+
+**Reporting Features**
+- Interactive GridView - Optional popup window for interactive data viewing
+- Dual export formats - Supports both Excel (XLSX) and CSV export options
+- Automatic file naming - Timestamped output files saved to Downloads folder
+- Statistical summaries - Per-user and aggregated statistics with percentage breakdowns
+- Application breakdown - Analysis by Copilot application (Outlook, Word, etc.)
+
+**Configuration Features**
+- Centralized configuration - All settings organized in a clear configuration section
+- Flexible parameters - Configurable request limits, delays, date ranges, and output options
+- Sample file generation - Creates template user list files with instructions
+- Module dependency checking - Graceful fallback from Excel to CSV if ImportExcel module unavailable
+
+**Analysis Features**
+- Usage pattern insights - Identifies interaction patterns across different Microsoft 365 applications
+- Automatic vs manual classification - Distinguishes between user-generated and system-generated interactions
+- Thread tracking - Groups related interactions by session ID
+- Context analysis - Captures interaction contexts and related metadata
+
+This script is a comprehensive tool for Microsoft 365 administrators to analyze Copilot usage patterns, troubleshoot issues, and generate detailed reports on user interactions with Microsoft Copilot across various applications.
 
 ---
 
@@ -224,7 +266,3 @@ MIT License (see repository for details).
 ## Support
 
 For issues or questions, please open a [GitHub issue](https://github.com/mikelee1313/Copilot/issues) or contact the script authors.
-
----
-
-*(Replace the Azure AD app IDs, secrets, certificate thumbprints, and user list paths with your own values before running.)*
