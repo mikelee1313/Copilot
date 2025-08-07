@@ -116,7 +116,7 @@ $RequestDelayMs = 250  # Delay in milliseconds between requests to help prevent 
 # Recommended: 250ms (allows ~4 RPS) or 100ms (allows ~10 RPS) for safety margin
 
 # Debug and monitoring options
-$Debug = $true  # Set to $true to log ALL requests and responses (successful and failed) to the log file
+$Debug = $false  # Set to $true to log ALL requests and responses (successful and failed) to the log file
 $TrackRPS = $true  # Set to $false to disable RPS tracking, calculations, and progress display
 #############################################################
 #                   END CONFIGURATION                       #
